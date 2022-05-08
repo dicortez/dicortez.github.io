@@ -36,25 +36,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registro/index.html">Registrarse</a>
+                      <a class="nav-link" href="../inicio de sesion/index.html">Iniciar Sesíon</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../registro/index.html">Registrarse</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Cerrar Sesión</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Más
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="donaciones/index.html">Donar</a></li>
-                            <li><a class="dropdown-item" href="#">Contacto</a></li>
-                            <li><a class="dropdown-item" href="#">Ayuda</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item">
+                      <div id="donate-button-container">
+                          <div id="donate-button"></div>
+                          <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                          <script>
+                          PayPal.Donation.Button({
+                          env:'production',
+                          hosted_button_id:'ES52YX38UGQLE',
+                          image: {
+                          src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif',
+                          alt:'Donate with PayPal button',
+                          title:'PayPal - The safer, easier way to pay online!',
+                          }
+                          }).render('#donate-button');
+                          </script>
+                          </div>
+                          
+                  </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
