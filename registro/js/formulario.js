@@ -2,11 +2,11 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^.{4,12}$/, // 4 a 12 digitos.
+	usuario: /^[a-zA-Z0-9\_\-]{4,999}$/, // Letras, numeros, guion y guion_bajo
+	nombre: /^[a-zA-ZÀ-ÿ\s]{4,999}$/, // Letras y espacios, pueden llevar acentos.
+	password: /^.{4,999}$/, // 4 a 999 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,9}$/ // 7 a 13 numeros.
+	telefono: /^\d{9}$/ // 7 a 13 numeros.
 }
 
 const campos = {
@@ -102,5 +102,6 @@ formulario.addEventListener('submit', (e) => {
 		});
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+	
 	}
 });

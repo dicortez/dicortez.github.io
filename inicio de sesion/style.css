@@ -113,16 +113,18 @@ h1 {
   background-color: black;
 }
 
+
+
 .link {
   text-decoration: none;
-  color: #C6C6C6;
-  float: right;
+  color: #000000;
   font-size: 12px;
   margin-bottom: 15px;
+  text-align: center;
 }
 .link:hover {
   text-decoration: underline;
-  color: #8C918F;
+  color: #1df800;
 }
 
 .alert {
