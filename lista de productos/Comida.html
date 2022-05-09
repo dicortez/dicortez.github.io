@@ -81,10 +81,10 @@
                 <div class="card">
                     <img src="comida/alexi-comida-perro.jpg" class="u-full-width">
                     <div class="info-card">
-                        <h4>master dog</h4>
-                        <p>master dog</p>
+                        <h4>Master dog 18kg perro</h4>
+                        <p>Master dog</p>
 
-                        <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+                        <p class="precio">$35 <span class="u-pull-right">$25</span></p>
                         <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
                         <!-- Set up a container element for the button -->
                         <div id="paypal-button-container"></div>
@@ -100,7 +100,7 @@
                               return actions.order.create({
                                 purchase_units: [{
                                   amount: {
-                                    value: '15' // Can also reference a variable or function
+                                    value: '35' // Can also reference a variable or function
                                   }
                                 }]
                               });
@@ -129,10 +129,10 @@
                 <div class="card">
                     <img src="comida/championcat.jpg" class="u-full-width">
                     <div class="info-card">
-                        <h4>championcat</h4>
-                        <p>championcat</p>
+                        <h4>Championcat para gatitos</h4>
+                        <p>Championcat</p>
 
-                        <p class="precio">$200 <span class="u-pull-right">$30</span></p>
+                        <p class="precio">$25<span class="u-pull-right">$18</span></p>
                         <div id="paypal-button-container1"></div>
                         <script>
                             paypal.Buttons({
@@ -146,7 +146,7 @@
                                 return actions.order.create({
                                   purchase_units: [{
                                     amount: {
-                                      value: '30' // Can also reference a variable or function
+                                      value: '18' // Can also reference a variable or function
                                     }
                                   }]
                                 });
@@ -175,10 +175,10 @@
                 <div class="card">
                     <img src="comida/sabrocan.jfif" class="u-full-width">
                     <div class="info-card">
-                        <h4>sabrocan</h4>
-                        <p>sabrocan</p>
+                        <h4>Sabrocan 3kg perro</h4>
+                        <p>Sabrocan</p>
 
-                        <p class="precio">$200 <span class="u-pull-right">$45</span></p>
+                        <p class="precio">$30 <span class="u-pull-right">$20</span></p>
                         <div id="paypal-button-container2"></div>
                         <script>
                             paypal.Buttons({
@@ -192,7 +192,7 @@
                                 return actions.order.create({
                                   purchase_units: [{
                                     amount: {
-                                      value: '45' // Can also reference a variable or function
+                                      value: '20' // Can also reference a variable or function
                                     }
                                   }]
                                 });
@@ -223,56 +223,11 @@
                 <div class="card">
                     <img src="comida/pedigri.jpeg" class="u-full-width">
                     <div class="info-card">
-                        <h4>pedigri</h4>
-                        <p>pedigri</p>
+                        <h4>Pedrigree 25kg adulto</h4>
+                        <p>Pedigree</p>
 
-                        <p class="precio">$200 <span class="u-pull-right">$70</span></p>
+                        <p class="precio">$50<span class="u-pull-right">$40</span></p>
                         <div id="paypal-button-container3"></div>
-                        <script>
-                            paypal.Buttons({
-                              // Sets up the transaction when a payment button is clicked
-                              style:{
-                                  color: 'blue',
-                                  shape: 'pill',
-                                  label: 'pay'
-                              },
-                              createOrder: (data, actions) => {
-                                return actions.order.create({
-                                  purchase_units: [{
-                                    amount: {
-                                      value: '70' // Can also reference a variable or function
-                                    }
-                                  }]
-                                });
-                              },
-                              // Finalize the transaction after payer approval
-                              onApprove: (data, actions) => {
-                                return actions.order.capture().then(function(orderData) {
-                                  // Successful capture! For dev/demo purposes:
-                                  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-                                  const transaction = orderData.purchase_units[0].payments.captures[0];
-                                  alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
-                                  // When ready to go live, remove the alert and show a success message within this page. For example:
-                                  // const element = document.getElementById('paypal-button-container');
-                                  // element.innerHTML = '<h3>Thank you for your payment!</h3>';
-                                  // Or go to another URL:  actions.redirect('thank_you.html');
-                                });
-                              }
-                            }).render('#paypal-button-container3');
-                          </script>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="comida/ricocat.jpg" class="u-full-width">
-                    <div class="info-card">
-                        <h4>ricocat</h4>
-                        <p>ricocat</p>
-
-                        <p class="precio">$200 <span class="u-pull-right">$40</span></p>
-                        <div id="paypal-button-container4"></div>
                         <script>
                             paypal.Buttons({
                               // Sets up the transaction when a payment button is clicked
@@ -303,7 +258,7 @@
                                   // Or go to another URL:  actions.redirect('thank_you.html');
                                 });
                               }
-                            }).render('#paypal-button-container4');
+                            }).render('#paypal-button-container3');
                           </script>
                         
                     </div>
@@ -311,13 +266,13 @@
             </div>
             <div class="four columns">
                 <div class="card">
-                    <img src="comida/sacos-de-comida-para-gatos.jpg" class="u-full-width">
+                    <img src="comida/ricocat.jpg" class="u-full-width">
                     <div class="info-card">
-                        <h4>whiskas</h4>
-                        <p>whiskas</p>
+                        <h4>Ricocat 9k gato</h4>
+                        <p>Ricocat</p>
 
-                        <p class="precio">$200 <span class="u-pull-right">$20</span></p>
-                        <div id="paypal-button-container5"></div>
+                        <p class="precio">$25<span class="u-pull-right">$20</span></p>
+                        <div id="paypal-button-container4"></div>
                         <script>
                             paypal.Buttons({
                               // Sets up the transaction when a payment button is clicked
@@ -331,6 +286,51 @@
                                   purchase_units: [{
                                     amount: {
                                       value: '20' // Can also reference a variable or function
+                                    }
+                                  }]
+                                });
+                              },
+                              // Finalize the transaction after payer approval
+                              onApprove: (data, actions) => {
+                                return actions.order.capture().then(function(orderData) {
+                                  // Successful capture! For dev/demo purposes:
+                                  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                                  const transaction = orderData.purchase_units[0].payments.captures[0];
+                                  alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+                                  // When ready to go live, remove the alert and show a success message within this page. For example:
+                                  // const element = document.getElementById('paypal-button-container');
+                                  // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                                  // Or go to another URL:  actions.redirect('thank_you.html');
+                                });
+                              }
+                            }).render('#paypal-button-container4');
+                          </script>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="comida/sacos-de-comida-para-gatos.jpg" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Whiskas 20kg adulto</h4>
+                        <p>Whiskas</p>
+
+                        <p class="precio">$50 <span class="u-pull-right">$35</span></p>
+                        <div id="paypal-button-container5"></div>
+                        <script>
+                            paypal.Buttons({
+                              // Sets up the transaction when a payment button is clicked
+                              style:{
+                                  color: 'blue',
+                                  shape: 'pill',
+                                  label: 'pay'
+                              },
+                              createOrder: (data, actions) => {
+                                return actions.order.create({
+                                  purchase_units: [{
+                                    amount: {
+                                      value: '35' // Can also reference a variable or function
                                     }
                                   }]
                                 });
