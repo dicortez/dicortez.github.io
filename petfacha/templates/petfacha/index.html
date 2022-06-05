@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/petfacha/static/petfacha/css/estilos.css">
+    <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap"
@@ -20,7 +20,7 @@
 </head>
 <!-- {% static 'petfacha/img/'%}  -->
 <body>
-    {% load static %}
+    
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: hsl(249, 93%, 83%);">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="img2" src="{% static 'petfacha/img/Pet Facha log .png'%}" alt=""></a>
@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="/index/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inicio de sesion/index.html">Iniciar Sesión</a>
+                        <a class="nav-link" href="/login/">Iniciar Sesión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registro/index.html">Registrarse</a>
+                        <a class="nav-link" href="/register/">Registrarse</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Cerrar Sesión</a>
@@ -129,7 +129,7 @@
                     <p class="card-text">¡Ropa para todo tipo de mascota con precios accecibles!</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"><button type="button" class="btn btn-dark" onclick="location.href='./lista de productos/Ropa.html'">Seleccionar</a></button></small>
+                    <small class="text-muted"><button type="button" class="btn btn-dark" onclick="location.href='/ropa/'">Seleccionar</a></button></small>
                 </div>
             </div>
             <div class="card">
@@ -141,7 +141,7 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"><button type="button" class="btn btn-dark" onclick="location.href='./lista de productos/Juguetes.html'">Seleccionar</a></button></small>
+                    <small class="text-muted"><button type="button" class="btn btn-dark" onclick="location.href='/juguetes/'">Seleccionar</a></button></small>
                 </div>
             </div>
             <div class="card">
