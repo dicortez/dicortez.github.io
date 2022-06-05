@@ -18,7 +18,7 @@ from .views import accesorios, camas, comida, correas, index, juguetes, register
   
 
 urlpatterns = [
-    
+    path('', index,name="index"),
     path('index/', index,name="index"),
     path('register/',register,name="registrar-usuario"),
     path('login/',login,name="iniciar-sesion"),
