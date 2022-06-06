@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
@@ -23,9 +24,16 @@
 		  </ul>
 		</header>
 	  </div>
+	 
+
 	<main>
 		<h1>Registre su usuario en PetFacha</style></h1>
-		<form action="" class="formulario" id="formulario">
+		<form action=""  class="formulario" id="formulario" method="POST">
+			{% csrf_token %}
+
+			<table>
+				{{form.as_table}}
+			</table>	
 			<!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>

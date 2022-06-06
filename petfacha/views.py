@@ -1,4 +1,8 @@
+from email import message
 from django.shortcuts import render
+from .models import *
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
 
 #create your views here.
 
@@ -7,9 +11,10 @@ def index(request):
 
     return render(request, 'petfacha/index.html')
 
-def register(request):
+def register(request):   
 
     return render(request, 'petfacha/registro.html')
+
 
 def login(request):
 
